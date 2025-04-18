@@ -1,0 +1,132 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    /* background-color: #000; */
+    background: linear-gradient(90deg ,#66666683 -50%, #000 100%);
+    overflow: hidden;
+}
+
+/* Progress Bar */
+.progressBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/* Progress Animation */
+.progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c9c9c9;
+    transition: width 1s linear;
+    mix-blend-mode: difference; /* Ensures overlapping effect */
+}
+
+/* Subtitle */
+.subtitle {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    mix-blend-mode: difference; /* Adjusts dynamically based on background */
+}
+
+/* Line under subtitle */
+.line {
+    height: 2px;
+    background-color: black;
+    
+    mix-blend-mode: difference; /* Changes color dynamically */
+}
+
+/* Timer Container */
+.timerContainer {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Time Block */
+.timeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Time Value */
+.timeValue {
+    font-size: 2.5rem;
+    font-weight: bold;
+    mix-blend-mode: difference; /* Changes color dynamically */
+}
+
+/* Label */
+.label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: difference; /* Ensures it adapts to background */
+}
+
+/* ************************************************* */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        width: 90%;
+        max-width: 100rem;
+        flex-direction: row;
+    }
+
+    
+    .subtitleContainer {
+        margin-left: 2rem;
+        width: 50%;
+    }
+
+    .timerContainer {
+        padding: 0 2rem;
+    }
+
+    .timeBlock {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .timeValue {
+        font-size: 3rem;
+    }
+
+    .label {
+        font-size: 0.875rem;
+    }
+}
+
+/* ************************************************* */
+@media (min-width: 1024px) {
+    .timeBlock {
+        padding: 1rem 2rem;
+    }
+    .timeValue {
+        font-size: 3.5rem;
+    }
+    .label {
+        font-size: 1rem;
+    }
+}
