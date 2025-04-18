@@ -2,7 +2,9 @@
 2) npm i for installing dependencies.
 3) npm run dev for starting the project.
 
-Tasks done :- 1)  Authentication Google Auth via Firebase, login
+Tasks done :- 
+
+              1)  Authentication Google Auth via Firebase, login
                   on event card click.
                   
               2) Registration & Email Confirmation Register user in Firestore and
